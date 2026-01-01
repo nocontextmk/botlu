@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucerne AI Concierge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Основен стил */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Многу светло сива */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Контејнер за содржина */
+        .container {
+            background-color: #fff; /* Бела позадина за содржината */
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Мека сенка */
+            max-width: 600px;
+            width: 90%;
+            box-sizing: border-box;
+            position: relative; /* За чатботот да се позиционира */
+        }
+
+        /* Хедер (Наслов) */
+        h1 {
+            font-size: 2.8em;
+            color: #2c3e50; /* Темно сина */
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Под-наслов */
+        p.subtitle {
+            font-size: 1.1em;
+            color: #7f8c8d; /* Средно сива */
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        /* Инструкција за гости */
+        .instruction {
+            font-size: 1.05em;
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* Место за чатботот */
+        .chatbot-container {
+            width: 100%;
+            height: 500px; /* Висина на чат прозорецот */
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fcfcfc;
+            margin-top: 30px;
+        }
+
+        /* Стил за iFrame на чатботот */
+        .chatbot-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Футер */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #95a5a6;
+            font-weight: 300;
+        }
+
+        /* Адаптивен дизајн за мали екрани */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            p.subtitle {
+                font-size: 1em;
+            }
+            .container {
+                padding: 30px 20px;
+            }
+            .chatbot-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Luzern AI Concierge</h1>
+        <p class="subtitle">Вашиот дигитален водич низ Луцерн</p>
+        <p class="instruction">
+            Поставете прашање за апартманот, локални атракции, ресторани, превоз или било што друго. <br>
+            Јас сум тука да ви помогнам 24/7!
+        </p>
+
+        <div class="chatbot-container">
+            <iframe src="YOUR_TYPEBOT_LINK_HERE" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Lucerne Concierge. Сите права задржани.
+    </footer>
+</body>
+</html>

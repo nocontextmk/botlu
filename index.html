@@ -3,59 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FiCH Taxi Luzern | 24/7 Flughafen & Stadt Transfer | Swiss Direct</title>
+    <title>FiCH Taxi Luzern | Swiss Direct Taxi & Airport Transfer</title>
     
-    <!-- SEO Мета Тагови -->
-    <meta name="description" content="FiCH Taxi Luzern - Ihr zuverlässiges Premium Taxi in Luzern. 24/7 Flughafentransfers (Zürich, Basel), Stadtfahrten & VIP Service. Festpreise, keine versteckten Kosten. Jetzt anrufen oder per WhatsApp buchen.">
-    <meta name="keywords" content="FiCH Taxi, FiCH Taxi Luzern, Taxi Luzern, Flughafentransfer Luzern, Zürich Airport Transfer, Taxi Luzern WhatsApp, Günstiges Taxi Luzern, Uber Alternative Luzern, Taxi Luzern Nummer, 24/7 Taxi">
+    <!-- SEO Meta -->
+    <meta name="description" content="FiCH Taxi Luzern - Ihr 24/7 Taxi & Flughafentransfer in Luzern. Schnell. Zuverlässig. Festpreise.">
+    <meta name="keywords" content="FiCH Taxi Luzern, Taxi Luzern, Flughafentransfer, Zurich Airport Transfer, Swiss Direct Taxi">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph (За социјални мрежи) -->
-    <meta property="og:title" content="FiCH Taxi Luzern | Swiss Direct Service">
-    <meta property="og:description" content="Schnell, zuverlässig und Festpreise. Ihr Premium Taxi in Luzern für Stadt und Flughafen.">
-    <meta property="og:type" content="website">
-
-    <!-- Schema.org Структурирани податоци за АИ & Google (GEO) -->
+    <!-- Schema.org Data for AI & Search Engines -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TaxiService",
       "name": "FiCH Taxi Luzern",
-      "description": "FiCH Taxi Service in Luzern, Switzerland. Specializing in airport transfers and city rides 24/7.",
+      "description": "24/7 Taxi & Flughafentransfer in Luzern. Schnell, zuverlässig, Festpreise.",
       "telephone": "+41791234567",
       "priceRange": "$$",
-      "serviceArea": {
-        "@type": "City",
-        "name": "Lucerne"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "FiCH Taxi Luzern",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Luzern",
-          "postalCode": "6003",
-          "addressCountry": "CH"
-        }
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Luzern",
+        "addressCountry": "CH"
       }
     }
     </script>
 
-    <!-- ИНЛАЈН CSS СТИЛОВИ -->
     <style>
-        /* Главни променливи за Швајцарски Минималистички Стил */
+        /* Точна швајцарска естетика од сликата */
         :root {
-            --bg-primary: #FAFAFA;
-            --bg-card: #FFFFFF;
-            --text-main: #111111;
-            --text-muted: #666666;
-            --accent-red: #D52B1E; /* Швајцарска Црвена */
-            --border-color: #E5E5E5;
-            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            --max-width: 1000px;
+            --bg-color: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --text-black: #050505;
+            --text-gray: #666666;
+            --btn-gray: #E8E8E8;
+            --btn-dark: #1A1A1A;
+            --accent-red: #D52B1E;
+            --whatsapp-green: #25D366;
+            --border-color: #EFEFEF;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* Ресетирање на основни елементи */
         * {
             margin: 0;
             padding: 0;
@@ -63,450 +49,397 @@
         }
 
         body {
-            font-family: var(--font-stack);
-            background-color: var(--bg-primary);
-            color: var(--text-main);
-            line-height: 1.6;
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-black);
+            line-height: 1.4;
             -webkit-font-smoothing: antialiased;
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
         }
 
         .container {
-            max-width: var(--max-width);
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
 
-        /* Навигација (Header) */
+        /* Header од сликата */
         header {
-            background-color: var(--bg-card);
+            background: var(--card-bg);
+            padding: 20px 0;
             border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .grid-nav {
+        .header-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 70px;
         }
 
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
+        .logo-box {
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
-        /* Минималистичка векторска икона за Логото */
-        .logo-icon {
-            width: 28px;
-            height: 28px;
-            background-color: var(--text-main);
-            color: #FFFFFF;
+        /* Црвена такси икона од сликата */
+        .taxi-logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--accent-red);
             border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
         }
 
-        .logo-icon svg {
+        .taxi-logo-icon svg {
             width: 18px;
             height: 18px;
-            fill: var(--accent-red);
+            fill: #FFFFFF;
         }
 
-        nav a {
-            margin-right: 20px;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: var(--text-main);
-        }
-
-        .btn-call-nav {
-            background-color: var(--text-main);
-            color: #FFFFFF;
-            padding: 10px 18px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-
-        .btn-call-nav:hover {
-            opacity: 0.85;
-        }
-
-        /* Hero Секција */
-        .hero {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border-color);
-            background-color: var(--bg-card);
-        }
-
-        .hero-content h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 15px;
-            line-height: 1.15;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-        }
-
-        .hero-btns {
+        .logo-text {
             display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            flex-direction: column;
         }
 
-        .btn-call-main {
-            background-color: var(--accent-red);
-            color: #FFFFFF;
-            padding: 14px 28px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 1rem;
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
-        .btn-whatsapp-main {
-            background-color: #25D366;
-            color: #FFFFFF;
-            padding: 14px 28px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 1rem;
+        .logo-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
         }
 
-        /* Секција за Услуги */
-        .services {
-            padding: 80px 0;
+        .hamburger {
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: var(--text-black);
+        }
+
+        /* Hero Секција идентична како на мобилниот од сликата */
+        .hero {
+            padding: 50px 0 40px 0;
+            background: var(--card-bg);
             border-bottom: 1px solid var(--border-color);
         }
 
-        .services h2, .prices h2, .booking h2 {
-            font-size: 1.8rem;
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            line-height: 1.02;
+            letter-spacing: -1.8px;
+            margin-bottom: 25px;
+            color: var(--text-black);
+        }
+
+        .btn-call-hero {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--btn-gray);
+            color: var(--text-black);
+            padding: 16px 32px;
+            border-radius: 30px;
             font-weight: 700;
-            margin-bottom: 40px;
+            font-size: 1.05rem;
+            width: 100%;
+            max-width: 340px;
+            transition: background 0.2s;
+        }
+
+        .btn-call-hero:hover {
+            background: #DDD;
+        }
+
+        /* Табела за цени идентична како на таблетот од сликата */
+        .prices-section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 25px;
             letter-spacing: -0.5px;
         }
 
-        .grid-services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .service-item {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 30px;
-            border-radius: 4px;
-        }
-
-        .service-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .service-item p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* Табела за Цени */
-        .prices {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border-color);
-            background-color: var(--bg-card);
-        }
-
         .price-table {
+            background: var(--card-bg);
+            border-radius: 12px;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
             overflow: hidden;
         }
 
-        .price-row {
+        .table-head {
             display: flex;
             justify-content: space-between;
-            padding: 18px 24px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .price-row:last-child {
-            border-bottom: none;
-        }
-
-        .header-row {
-            background-color: var(--bg-primary);
-            font-weight: 700;
-        }
-
-        .price-note {
-            margin-top: 15px;
+            padding: 14px 20px;
+            background: #F4F4F4;
             font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        /* Форма за Резервација */
-        .booking {
-            padding: 80px 0;
+            color: var(--text-gray);
+            font-weight: 700;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .booking-subtitle {
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            margin-top: -30px;
-        }
-
-        .booking-form {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 30px;
-            border-radius: 4px;
-            display: grid;
-            gap: 20px;
-        }
-
-        .form-group {
+        .table-row {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .form-group label {
-            font-size: 0.9rem;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
             font-weight: 600;
         }
 
-        .form-group input {
-            padding: 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 1rem;
-            font-family: inherit;
+        .table-row:last-child {
+            border-bottom: none;
         }
 
-        .form-group input:focus {
-            outline: 2px solid var(--text-main);
+        .price-tag {
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        /* Возила (Fleet) од долу десно на сликата */
+        .fleet-section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .fleet-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .fleet-card svg {
+            width: 80px;
+            height: 40px;
+            fill: var(--text-black);
+            margin-bottom: 15px;
+        }
+
+        .fleet-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-black);
+        }
+
+        /* Лебдечко копче WhatsApp од сликата */
+        .btn-whatsapp-floating {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--whatsapp-green);
+            color: #FFFFFF;
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 999;
+        }
+
+        /* Форма за Резервација */
+        .booking-section {
+            padding: 60px 0;
+            background: var(--card-bg);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--bg-color);
         }
 
         .btn-submit {
-            background-color: var(--text-main);
-            color: #FFFFFF;
-            padding: 14px;
+            width: 100%;
+            background: var(--btn-dark);
+            color: #FFF;
+            padding: 16px;
             border: none;
-            border-radius: 4px;
-            font-size: 1rem;
+            border-radius: 8px;
             font-weight: 700;
+            font-size: 1rem;
             cursor: pointer;
             margin-top: 10px;
         }
 
-        /* Футер */
         footer {
-            padding: 60px 0;
-            background-color: var(--bg-card);
-            font-size: 0.9rem;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            border-top: 1px solid var(--border-color);
         }
 
-        .grid-footer {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .footer-info h3 {
-            margin-bottom: 10px;
-        }
-
-        .footer-link {
-            color: var(--text-muted);
-            text-decoration: underline;
-        }
-
-        .footer-legal {
-            color: var(--text-muted);
-            text-align: right;
-        }
-
-        /* Прилагодувања за Мобилен Телефон */
-        @media (max-width: 768px) {
-            nav {
-                display: none;
+        /* Мобилна прилагоденост */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.3rem;
             }
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            .hero-btns {
-                flex-direction: column;
-            }
-            .btn-call-main, .btn-whatsapp-main {
-                text-align: center;
-            }
-            .footer-legal {
-                text-align: left;
+            .btn-call-hero {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Заглавие и Навигација -->
+    <!-- Header со иконата од сликата -->
     <header>
-        <div class="container grid-nav">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <!-- Минималистичка икона на авто/такси знак -->
+        <div class="container header-flex">
+            <div class="logo-box">
+                <div class="taxi-logo-icon">
                     <svg viewBox="0 0 24 24">
                         <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4h14v4z"/>
                         <circle cx="7.5" cy="15.5" r="1.5"/>
                         <circle cx="16.5" cy="15.5" r="1.5"/>
                     </svg>
                 </div>
-                FiCH Taxi Luzern
-            </a>
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#prices">Preise</a>
-                <a href="#booking">Buchung</a>
-                <a href="#contact">Kontakt</a>
-            </nav>
-            <a href="tel:+41791234567" class="btn-call-nav">Rufen Sie uns an</a>
+                <div class="logo-text">
+                    <span class="logo-sub">Swiss Direct</span>
+                    <span class="logo-title">FiCH Taxi Luzern</span>
+                </div>
+            </div>
+            <div class="hamburger">☰</div>
         </div>
     </header>
 
-    <!-- Главен "Hero" дел -->
-    <section id="hero" class="hero">
-        <div class="container grid-hero">
-            <div class="hero-content">
-                <h1>FiCH Taxi — Ihr 24/7 Partner in Luzern.</h1>
-                <p>Schnell. Zuverlässig. Festpreise.</p>
-                
-                <div class="hero-btns">
-                    <a href="tel:+41791234567" class="btn-call-main">Rufen Sie uns jetzt an</a>
-                    <a href="https://wa.me/41791234567" class="btn-whatsapp-main">WhatsApp Buchung</a>
-                </div>
-            </div>
+    <!-- Hero Секција -->
+    <section class="hero">
+        <div class="container">
+            <h1>Ihr 24/7 Taxi & Flughafentransfer in Luzern.<br>Schnell.<br>Zuverlässig.<br>Festpreise.</h1>
+            <a href="tel:+41791234567" class="btn-call-hero">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                Rufen Sie uns jetzt an
+            </a>
         </div>
     </section>
 
-    <!-- Секција за Услуги -->
-    <section id="services" class="services">
+    <!-- Табела Цени -->
+    <section class="prices-section">
         <div class="container">
-            <h2>Unsere Dienstleistungen</h2>
-            <div class="grid-services">
-                <div class="service-item">
-                    <h3>Flughafentransfer</h3>
-                    <p>Direkte Fahrten zu den Flughäfen Zürich (ZRH), Basel (BSL) und Genf (GVA). Pünktlich und stressfrei mit FiCH Taxi.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Stadtfahrten</h3>
-                    <p>Schnelle und komfortable Fahrten überall in Luzern und Umgebung. 24 Stunden am Tag verfügbar.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Geschäftsreisen</h3>
-                    <p>Professioneller VIP- und Limousinenservice für Ihre Geschäftstermine in der Schweiz.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Секција за Цени -->
-    <section id="prices" class="prices">
-        <div class="container">
-            <h2>Festpreise & Transparenz</h2>
+            <h2 class="section-title">Flughafentransfer Festpreise</h2>
             <div class="price-table">
-                <div class="price-row header-row">
-                    <div>Route</div>
-                    <div>Preis (ab)</div>
+                <div class="table-head">
+                    <span>Routen</span>
+                    <span>Airport Routen</span>
                 </div>
-                <div class="price-row">
-                    <div>Luzern ↔ Zürich Airport (ZRH)</div>
-                    <div>CHF 190</div>
+                <div class="table-row">
+                    <span>Luzern - ZRH</span>
+                    <span class="price-tag">(CHF 190)</span>
                 </div>
-                <div class="price-row">
-                    <div>Luzern ↔ Basel Airport (BSL)</div>
-                    <div>CHF 210</div>
+                <div class="table-row">
+                    <span>Luzern - BSL</span>
+                    <span class="price-tag">(CHF 210)</span>
                 </div>
-                <div class="price-row">
-                    <div>Luzern ↔ Pilatus Bahnen</div>
-                    <div>CHF 45</div>
-                </div>
-                <div class="price-row">
-                    <div>Luzern ↔ Verkehrshaus</div>
-                    <div>CHF 25</div>
+                <div class="table-row">
+                    <span>Luzern - GVA</span>
+                    <span class="price-tag">(CHF 480)</span>
                 </div>
             </div>
-            <p class="price-note">*Alle Preise sind Richtwerte und können je nach Verkehr und Fahrzeugtyp variieren.</p>
         </div>
     </section>
 
-    <!-- Секција за Онлајн Резервација -->
-    <section id="booking" class="booking">
+    <!-- Секција Возила -->
+    <section class="fleet-section">
         <div class="container">
-            <h2>Fahrt Online Buchen</h2>
-            <p class="booking-subtitle">Reservieren Sie Ihre Fahrt im Voraus mit FiCH Taxi. Sie erhalten umgehend eine Bestätigung.</p>
-            
-            <form class="booking-form" action="https://formspree.io/f/tvojo-formspree-id" method="POST">
+            <h2 class="section-title">Unsere Fahrzeuge</h2>
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg>
+                    <h3>Premium Limousine</h3>
+                </div>
+                <div class="fleet-card">
+                    <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+                    <h3>Van 8-Sitzer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма за Резервација -->
+    <section class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Fahrt Online Buchen</h2>
+            <form action="https://formspree.io/f/tvojo-formspree-id" method="POST">
                 <div class="form-group">
-                    <label for="name">Name & Vorname</label>
-                    <input type="text" id="name" name="name" required placeholder="z.B. Max Mustermann">
+                    <label>Name</label>
+                    <input type="text" name="name" required placeholder="Ihr Name">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Telefonnummer / WhatsApp</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+41 79 000 00 00">
+                    <label>Telefon / WhatsApp</label>
+                    <input type="tel" name="phone" required placeholder="+41 79 ...">
                 </div>
                 <div class="form-group">
-                    <label for="from">Abholort (Von)</label>
-                    <input type="text" id="from" name="from" required placeholder="Adresse oder Ort">
+                    <label>Von</label>
+                    <input type="text" name="from" required placeholder="Abholadresse">
                 </div>
                 <div class="form-group">
-                    <label for="to">Zielort (Nach)</label>
-                    <input type="text" id="to" name="to" required placeholder="z.B. Flughafen Zürich">
+                    <label>Nach</label>
+                    <input type="text" name="to" required placeholder="Zielort">
                 </div>
-                <div class="form-group">
-                    <label for="datetime">Datum & Uhrzeit</label>
-                    <input type="datetime-local" id="datetime" name="datetime" required>
-                </div>
-                <button type="submit" class="btn-submit">Fahrt Jetzt Reservieren</button>
+                <button type="submit" class="btn-submit">Jetzt Buchen</button>
             </form>
         </div>
     </section>
 
-    <!-- Футер и Контакт -->
-    <footer id="contact">
-        <div class="container grid-footer">
-            <div class="footer-info">
-                <h3>FiCH Taxi Luzern</h3>
-                <p>Verfügbar 24 Stunden, 7 Tage die Woche.</p>
-                <a href="tel:+41791234567" class="footer-link">+41 79 123 45 67</a><br>
-                <a href="mailto:info@fich-taxi-luzern.ch" class="footer-link">info@fich-taxi-luzern.ch</a>
-            </div>
-            <div class="footer-legal">
-                <p>&copy; 2026 FiCH Taxi Luzern. Alle Rechte vorbehalten.</p>
-                <p>Швајцарски Минималистички Стил.</p>
-            </div>
+    <!-- Лебдечко копче WhatsApp -->
+    <a href="https://wa.me/41791234567" class="btn-whatsapp-floating" target="_blank">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+        </svg>
+        WhatsApp Buchung
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FiCH Taxi Luzern. Swiss Direct Quality.</p>
         </div>
     </footer>
 
